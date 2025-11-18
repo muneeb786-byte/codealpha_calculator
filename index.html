@@ -1,0 +1,249 @@
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minimal Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link id="all-fonts-link-font-geist" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-geist">
+        .font-geist {
+            font-family: 'Geist', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-roboto" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-roboto">
+        .font-roboto {
+            font-family: 'Roboto', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-montserrat" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-montserrat">
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-poppins" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-poppins">
+        .font-poppins {
+            font-family: 'Poppins', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-playfair" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap">
+    <style id="all-fonts-style-font-playfair">
+        .font-playfair {
+            font-family: 'Playfair Display', serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-instrument-serif" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-instrument-serif">
+        .font-instrument-serif {
+            font-family: 'Instrument Serif', serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-merriweather" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap">
+    <style id="all-fonts-style-font-merriweather">
+        .font-merriweather {
+            font-family: 'Merriweather', serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-bricolage" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-bricolage">
+        .font-bricolage {
+            font-family: 'Bricolage Grotesque', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-jakarta" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap">
+    <style id="all-fonts-style-font-jakarta">
+        .font-jakarta {
+            font-family: 'Plus Jakarta Sans', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-manrope" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap">
+    <style id="all-fonts-style-font-manrope">
+        .font-manrope {
+            font-family: 'Manrope', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-space-grotesk" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-space-grotesk">
+        .font-space-grotesk {
+            font-family: 'Space Grotesk', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-work-sans" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap">
+    <style id="all-fonts-style-font-work-sans">
+        .font-work-sans {
+            font-family: 'Work Sans', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-pt-serif" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap">
+    <style id="all-fonts-style-font-pt-serif">
+        .font-pt-serif {
+            font-family: 'PT Serif', serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-geist-mono" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-geist-mono">
+        .font-geist-mono {
+            font-family: 'Geist Mono', monospace !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-space-mono" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap">
+    <style id="all-fonts-style-font-space-mono">
+        .font-space-mono {
+            font-family: 'Space Mono', monospace !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-quicksand" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-quicksand">
+        .font-quicksand {
+            font-family: 'Quicksand', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-nunito" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap">
+    <style id="all-fonts-style-font-nunito">
+        .font-nunito {
+            font-family: 'Nunito', sans-serif !important;
+        }
+    </style>
+</head>
+
+<body class="max-h-screen bg-black text-slate-50 antialiased">
+    <div class="h-screen flex items-center justify-center">
+        <main
+            class="sm:max-w-sm md:max-w-md  flex flex-col sm:py-8 sm:px-6 text-white bg-black w-full max-w-xs pt-6 pr-4 pb-6 pl-4 justify-between">
+            <!-- Display -->
+            <section class="flex flex-col flex-1 space-y-1 items-end justify-end">
+                <div id="expression"
+                    class="w-full text-right text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-slate-50 break-words leading-tight">
+                    0</div>
+                <div id="result"
+                    class="w-full text-right text-lg sm:text-xl md:text-2xl font-medium text-slate-400 leading-tight">
+                    &nbsp;</div>
+            </section>
+
+            <!-- Keypad -->
+            <section class="mt-6 sm:mt-8">
+                <div class="grid grid-cols-4 gap-3 sm:gap-4">
+                    <!-- Row 1 -->
+                    <button data-action="clear"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        AC
+                    </button>
+                    <button data-action="percent"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        %
+                    </button>
+                    <button data-action="backspace"
+                        class="calc-key rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors"
+                        aria-label="Backspace">
+                        ⌫
+                    </button>
+                    <button data-operator="÷"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-orange-400 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        ÷
+                    </button>
+
+                    <!-- Row 2 -->
+                    <button data-number="7"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        7
+                    </button>
+                    <button data-number="8"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        8
+                    </button>
+                    <button data-number="9"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        9
+                    </button>
+                    <button data-operator="×"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-orange-400 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        ×
+                    </button>
+
+                    <!-- Row 3 -->
+                    <button data-number="4"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        4
+                    </button>
+                    <button data-number="5"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        5
+                    </button>
+                    <button data-number="6"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        6
+                    </button>
+                    <button data-operator="-"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-orange-400 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        −
+                    </button>
+
+                    <!-- Row 4 -->
+                    <button data-number="1"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        1
+                    </button>
+                    <button data-number="2"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        2
+                    </button>
+                    <button data-number="3"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        3
+                    </button>
+                    <button data-operator="+"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-orange-400 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        +
+                    </button>
+
+                    <!-- Row 5 -->
+                    <button data-number="00"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        00
+                    </button>
+                    <button data-number="0"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        0
+                    </button>
+                    <button data-decimal="."
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-neutral-800 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-neutral-700 transition-colors">
+                        .
+                    </button>
+                    <button data-action="equals"
+                        class="calc-key text-base sm:text-lg md:text-xl font-semibold rounded-full bg-orange-500 text-slate-50 flex items-center justify-center py-3 sm:py-3.5 active:bg-orange-400 transition-colors">
+                        =
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+
+</body>
+
+</html>
